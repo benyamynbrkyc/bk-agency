@@ -4,9 +4,8 @@
   "description": "Bootstrap 4 based Agency Landing Page",
   "main": "index.html",
   "scripts": {
-    "start": "gulp watch",
-    "vendors": "gulp buildVendors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon -e html,js,css server.js"
   },
   "keywords": [
     "bootstrap4",
@@ -30,7 +29,9 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "nodemon": "^2.0.4",
     "popper.js": "^1.16.1",
     "wowjs": "^1.1.3"
   },
